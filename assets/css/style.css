@@ -1,0 +1,47 @@
+/* GLOBAL */
+:root{
+    font-family: sans-serif;
+    font-size: 62.5%;
+
+    --color-default: #fafafa;
+    --color-primary: #27a776;
+    --color-secondary: #161718;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+/* HEADER */
+header{
+    background-color: var(--color-secondary);
+    color: var(--color-default);
+}
+
+#header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 15rem;
+    margin: 0 auto;
+}
+
+.list-nav > li{
+    display: inline;
+    margin-right: 2rem;
+}
+
+.list-nav-link{
+    font-size: 1.5rem;
+    color: var(--color-default);
+}
