@@ -13,7 +13,8 @@
 
 /* size */
 :root{
-    --gap: 3rem
+    --gap: 3rem;
+    --big-gap: 10rem;
 }
 /* GLOBAL */
 html{
@@ -208,4 +209,38 @@ h1 span::before {
 
 .about-content > p > strong{
     color: var(--color-primary);
+}
+
+/* Portfolio */
+.portfolio-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--big-gap);
+}
+
+.gallery-img{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.image-gallery{
+    min-height: 36rem;
+    min-width: 36rem;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.image-gallery > img{
+    height: auto;
+    max-width: 100%;
+}
+
+/* Media */
+@media (max-width: 110rem){
+    /* Portfolio */
+    .gallery-img{
+        grid-template-columns: 1fr;
+    }
 }
