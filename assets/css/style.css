@@ -9,6 +9,7 @@
     --color-default: #fafafa;
     --color-primary: #27a776;
     --color-secondary: #161718;
+    --color-third: #1617188a;
 }
 
 /* size */
@@ -235,6 +236,59 @@ h1 span::before {
 .image-gallery > img{
     height: auto;
     max-width: 100%;
+}
+
+/* Service */
+.service-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--big-gap);
+}
+
+.service-content > h2{
+    color: var(--color-primary);
+    margin-bottom: var(--gap);
+}
+
+.list-service{
+    width: 50%;
+    min-width: 40rem;
+}
+
+.list-service > h3{
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    color: var(--color-third);
+}
+
+.list-service > h3::after{
+    content: "";
+    width: 12rem;
+    height: 0.1rem;
+    display: inline-block;
+    background: var(--color-primary);
+    margin: 0.4rem 1rem;
+}
+
+.list-service > li{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.1rem dashed var(--color-third);
+    padding: 1.5rem 0 1.5rem 0;
+}
+
+.list-service > li > span{
+    color: var(--color-secondary);
+    opacity: 70%;
+}
+
+.list-service > li > strong{
+    font-weight: normal;
 }
 
 /* Media */
