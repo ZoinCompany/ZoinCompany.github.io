@@ -1,6 +1,6 @@
 /* Fonts */
 :root{
-    font-family: 'Open Sans';
+    font-family: sans-serif;
     font-size: 62.5%;
 }
 
@@ -29,12 +29,12 @@ html{
 }
 
 h1, h2, h3, h4, h5, h6{
-    font-family: 'Open Sans', sans-serif;
+    font-family: sans-serif, sans-serif;
 }
     
 h1{
     font-size: 6rem;
-    font-family: 'Open Sans';
+    font-family: sans-serif;
 }
     
 h2{
@@ -223,13 +223,14 @@ h1 span::before {
 }
 
 .gallery-img{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+    columns: 36rem 3;
 }
 
 .image-gallery{
-    min-height: 36rem;
-    min-width: 36rem;
+    /* min-height: 36rem; */
+    /* min-width: 36rem; */
     padding: 1rem;
     overflow: hidden;
     cursor: pointer;
