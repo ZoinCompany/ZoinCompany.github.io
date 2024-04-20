@@ -130,6 +130,11 @@ header{
     color: var(--color-secondary);
 }
 
+.background-image{
+    background-image: url("../img/BANNER-ZOIN-COMPANY.png");
+    color: var(--color-default);
+}
+
 /* Home */
 .home-content{
     display: flex;
@@ -229,8 +234,8 @@ h1 span::before {
 }
 
 .image-gallery{
-    /* min-height: 36rem; */
-    /* min-width: 36rem; */
+    min-height: 36rem;
+    min-width: 36rem;
     padding: 1rem;
     overflow: hidden;
     cursor: pointer;
@@ -257,7 +262,7 @@ h1 span::before {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: var(--big-gap);
+    /* padding: var(--big-gap); */
 }
 
 .service-content > h2{
@@ -350,6 +355,12 @@ h1 span::before {
     /* Portfolio */
     .gallery-img{
         grid-template-columns: 1fr;
+    }
+
+    /* Service */
+    .list-service{
+        width: 90%;
+        padding: var(--gap);
     }
     
     /* Contact */
