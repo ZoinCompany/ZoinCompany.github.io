@@ -131,7 +131,7 @@ header{
 }
 
 .background-image{
-    background-image: url("../img/BANNER-ZOIN-COMPANY.png");
+    background-image: url("../img/4BANNER-ZOIN-COMPANY-.png");
     color: var(--color-default);
 }
 
@@ -293,14 +293,25 @@ h1 span::before {
     margin: 0.4rem 1rem;
 }
 
-.list-service > li{
+.list-service > a > li{
     display: flex;
     justify-content: space-between;
     border-bottom: 0.1rem dashed var(--color-third);
     padding: 1.5rem 0 1.5rem 0;
 }
 
-.list-service > li > span{
+.list-service > a{
+    color: var(--color-secondary);
+    opacity: 70%;
+}
+
+.list-service > a:hover{
+    color: var(--color-primary);
+}
+
+
+
+.list-service > a > li > span{
     color: var(--color-secondary);
     opacity: 70%;
 }
